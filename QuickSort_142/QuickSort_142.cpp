@@ -91,3 +91,12 @@ void display() {
 	cout << "\n\nNumber of Comparassions: " << cmp_count << endl;
 	cout << "Number of Data Movement: " << mov_count << endl;
 }
+
+int main() {
+	input();
+	q_sort(0, n - 1);
+	display();
+	system("Pause");
+
+	return 0;
+}
