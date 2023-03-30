@@ -77,3 +77,17 @@ void q_sort(int low, int high)
 	q_sort(low, j - 1);
 	q_sort(j + 1, high);
 }
+
+void display() {
+	cout << "\n______________" << endl;
+	cout << "Sorted Array" << endl;
+	cout << "\n______________" << endl;
+
+	for (int i = 0; i < n; i++)
+	{
+		cout << arr[i] << " ";
+	}
+
+	cout << "\n\nNumber of Comparassions: " << cmp_count << endl;
+	cout << "Number of Data Movement: " << mov_count << endl;
+}
